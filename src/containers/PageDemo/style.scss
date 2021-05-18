@@ -1,0 +1,124 @@
+$bg-color: #0466b1;
+$font-color: #fff;
+$border-color: #7ccfff;
+
+.bg {
+  background-color: $bg-color !important;
+}
+.layout-margin-top {
+  margin-top: 40px;
+}
+
+.layout-container {
+  min-height: 100vh !important;
+
+  .layout-header {
+    height: 64px;
+    display: flex;
+
+    div {
+      height: 64px;
+      color: $font-color;
+    }
+    .left {
+      width: 150px;
+
+      img {
+        width: 100px;
+        height: auto;
+      }
+    }
+
+    .center {
+      text-align: center;
+      font-size: 22px;
+      font-weight: bold;
+      flex: 1;
+    }
+    .right {
+      width: 150px;
+      padding-top: 10px;
+
+      p {
+        line-height: 1;
+      }
+    }
+  }
+
+  .layout-content {
+    padding: 20px 50px;
+
+    .space-align-container {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+
+      .space-align-block {
+        flex: 1;
+        margin: 20px 10%;
+        line-height: 50px;
+        font-size: 24px;
+        box-sizing: content-box !important;
+        text-align: center;
+        border: 1px solid $font-color;
+        background: #03c904;
+      }
+
+      .yellow {
+        background: #fafc1c;
+      }
+    }
+  }
+
+  .layout-footer {
+    text-align: center;
+    font-size: 30px !important;
+    color: $font-color !important;
+    font-weight: bold;
+    border-top: 3px solid $font-color;
+  }
+}
+
+.table-td,
+.table-td:hover {
+  background-color: $bg-color;
+  border: 1px solid $border-color;
+  color: $font-color;
+  text-align: center;
+}
+
+.ant-table-thead > tr > th,
+.ant-table-tbody > tr.ant-table-row:hover > td {
+  background-color: $bg-color !important;
+  border: 1px solid $border-color;
+  color: $font-color !important;
+  text-align: center !important;
+}
+
+.ant-descriptions-item-container .ant-descriptions-item-label,
+.ant-descriptions-item-container .ant-descriptions-item-content {
+  display: inline-block !important;
+}
+
+.ant-descriptions-small .ant-descriptions-row > th,
+.ant-descriptions-small .ant-descriptions-row > td {
+  border: 1px solid $border-color;
+  padding-bottom: 0 !important;
+}
+
+.ant-descriptions-item-label {
+  width: 25%;
+  padding: 3px 0 3px 10px;
+  text-align: center !important;
+  color: $font-color !important;
+  border-right: 1px solid $border-color !important;
+}
+
+.ant-descriptions-item-content {
+  padding: 3px auto 3px 3px;
+  color: $font-color !important;
+}
+
+.ant-descriptions-item-label::after {
+  content: "" !important;
+}
